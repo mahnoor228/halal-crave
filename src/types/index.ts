@@ -1,0 +1,12 @@
+export type Point = {lat:number;lng:number};
+export type OriginMode = 'campus'|'me'|'custom';
+export type SortBy = 'distance'|'rating'|'reviews'|'name';
+export type TravelMode = 'WALKING'|'BICYCLING'|'TRANSIT'|'DRIVING';
+export type HalalStatus = 'fully_halal'|'halal_options';
+export type Restaurant = {id:string;name:string;location:Point;address?:string;rating?:number;reviewCount?:number;price?:string;open?:boolean;closingTime?:string;photo?:string;photos?:string[];website?:string;phone?:string;mapsUrl?:string;types?:string[];hours?:string[];reviews?:Review[];amenities?:Record<string,boolean|undefined>;businessStatus?:string;source:'google'|'directory';cuisine?:string;area?:string;halalStatus?:HalalStatus;halalNote?:string;nearCampus?:boolean};
+export type Review = {author:string;rating:number;text:string;time?:string;avatar?:string;url?:string};
+export type Filters = {open:boolean;rating:number;price:string;halalOnly:boolean;cuisine:string;area:string;nearCampus:boolean};
+export const DEFAULT_FILTERS:Filters = {open:false,rating:0,price:'any',halalOnly:false,cuisine:'any',area:'any',nearCampus:false};
+export const CAMPUS:Point={lat:32.8801,lng:-117.2340};
+export const CUISINES = ['Mediterranean','Middle Eastern','Indian','Pakistani','Afghan','Persian','Turkish','Ethiopian','Somali','East African','Thai','Chinese','Mexican','American','Other'] as const;
+export const AREAS = ['La Jolla','UTC / University City','Clairemont','Hillcrest','North Park','South Park','Downtown / Gaslamp','Mission Valley','Kearny Mesa','Miramar','Sorrento Valley','Mira Mesa','Scripps Ranch','Rancho Bernardo','La Mesa','El Cajon','Chula Vista','Other San Diego'] as const;
