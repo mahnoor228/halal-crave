@@ -53,9 +53,9 @@ Directory mode needs no key and no billing. If a key is configured but billing i
 
 ## Scripts
 
-- `npm run dev` — local Vite server
-- `npm run build` — TypeScript check and production bundle
-- `npm run preview` — preview the built bundle
+- `npm run dev` - local Vite server
+- `npm run build` - TypeScript check and production bundle
+- `npm run preview` - preview the built bundle
 
 ## Deployment
 
