@@ -9,4 +9,4 @@ export type Filters = {open:boolean;rating:number;price:string;halalOnly:boolean
 export const DEFAULT_FILTERS:Filters = {open:false,rating:0,price:'any',halalOnly:false,cuisine:'any',area:'any',nearCampus:false};
 export const CAMPUS:Point={lat:32.8801,lng:-117.2340};
 export const CUISINES = ['Mediterranean','Middle Eastern','Indian','Pakistani','Afghan','Persian','Turkish','Ethiopian','Somali','East African','Thai','Chinese','Mexican','American','Other'] as const;
-export const AREAS = ['La Jolla','UTC / University City','Clairemont','Hillcrest','North Park','South Park','Downtown / Gaslamp','Mission Valley','Kearny Mesa','Miramar','Sorrento Valley','Mira Mesa','Scripps Ranch','Rancho Bernardo','La Mesa','El Cajon','Chula Vista','Other San Diego'] as const;
+export const AREAS = ['La Jolla','UTC / University City','Clairemont','Hillcrest','North Park','South Park','Downtown / Gaslamp','Mission Valley','Kearny Mesa','Miramar','Sorrento Valley','Mira Mesa','Scripps Ranch','Rancho Bernardo','La Mesa','Santee','El Cajon','Chula Vista','Other San Diego'] as const;

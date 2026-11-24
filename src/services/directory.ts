@@ -67,5 +67,8 @@ const entries:Restaurant[]=[
 {id:'dir-saray',name:'Saray Restaurant',location:{lat:32.79560383,lng:-116.93487358},address:'123 Jamacha Rd, El Cajon, CA 92019',cuisine:'Turkish',area:'El Cajon',halalStatus:'fully_halal',halalNote:'No alcohol served.',source:'directory'},
 // Chula Vista
 {id:'dir-kabob-shack',name:'Kabob Shack',location:{lat:32.64108788,lng:-117.09383114},address:'200 Broadway, Chula Vista, CA 91910',cuisine:'Afghan',area:'Chula Vista',halalStatus:'fully_halal',source:'directory'},
+// Santee
+{id:'dir-habibi-santee',name:'Habibi Mediterranean Grill',location:{lat:32.85572,lng:-116.972988},address:'9830 N Magnolia Ave, Santee, CA 92071',cuisine:'Mediterranean',area:'Santee',halalStatus:'fully_halal',source:'directory'},
+{id:'dir-baklava-king-santee',name:'Baklava King',location:{lat:32.832274,lng:-116.980667},address:'9932 Prospect Ave Ste 136, Santee, CA 92071',cuisine:'Other',area:'Santee',halalStatus:'fully_halal',halalNote:'Bakery, not a restaurant; wholesale manufacturer, visits by appointment or will-call pickup only.',source:'directory'},
 ];
 export const directory:Restaurant[]=entries.map(r=>({...r,nearCampus:r.location.lat>=32.8665&&r.location.lat<=32.8955&&r.location.lng>=-117.253&&r.location.lng<=-117.222}));
